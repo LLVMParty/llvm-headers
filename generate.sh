@@ -8,7 +8,7 @@ fi
 
 pushd "$LLVM_DIR"
 git fetch
-for i in {13..19}; do
+for i in {13..20}; do
     echo "[INFO] Processing LLVM $i.x..."
     git checkout -f "origin/release/$i.x"
     DEST="$REPO_DIR/$i.x"
